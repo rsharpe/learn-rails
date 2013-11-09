@@ -35,5 +35,6 @@ enable_starttls_auto: true,
 user_name: ENV["GMAIL_USERNAME"],
 password: ENV["GMAIL_PASSWORD"]
 }
-
+# Send email in development mode.
+config.action_mailer.perform_deliveries = true
 end
